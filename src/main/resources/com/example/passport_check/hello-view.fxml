@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="375.0" prefWidth="390.0" spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.passport_check.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label fx:id="todayLabel" alignment="TOP_CENTER" layoutX="163.0" layoutY="73.0" />
+
+    <Label alignment="TOP_CENTER" text="Дата рождения" />
+   <TextField fx:id="birthday" promptText="22.11.1983">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </TextField>
+   <Label alignment="TOP_CENTER" layoutX="163.0" layoutY="92.0" text="Дата выдачи" />
+   <TextField fx:id="issueDate" layoutX="30.0" layoutY="129.0" promptText="31.03.2004">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </TextField>
+    <Button onAction="#onHelloButtonClick" text="Проверить" />
+   <TextField fx:id="age" layoutX="30.0" layoutY="152.0" onAction="#onHelloButtonClick" prefHeight="25.0" prefWidth="203.0" promptText="Возраст">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="ageOnIssueDate" layoutX="30.0" layoutY="281.0" onAction="#onHelloButtonClick" prefHeight="25.0" prefWidth="203.0" promptText="Возраст на дату выдачи">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="result" layoutX="30.0" layoutY="301.0" onAction="#onHelloButtonClick" prefHeight="25.0" prefWidth="203.0" promptText="Результат">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </TextField>
+</VBox>
